@@ -1,3 +1,3 @@
 # About
 
-Github page for sharing stuff for myself.
+Github page for sharing scripts.
