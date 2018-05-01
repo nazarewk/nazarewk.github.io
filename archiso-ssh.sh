@@ -1,4 +1,5 @@
 #!/bin/sh
+# curl -s https://nazarewk.github.io/archiso-ssh.sh | sh
 [ -d "$HOME/.ssh" ] || mkdir -m 700 $HOME/.ssh
-wget https://nazarewk.github.io/nazarewk.pub -O "$HOME/.ssh/authorized_keys"
+curl https://nazarewk.github.io/nazarewk.pub > "$HOME/.ssh/authorized_keys"
 systemctl start sshd.service
